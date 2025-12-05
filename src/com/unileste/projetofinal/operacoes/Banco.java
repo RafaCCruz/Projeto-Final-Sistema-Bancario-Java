@@ -140,4 +140,12 @@ public class Banco {
         }
         return sb.toString();
     }
+
+    public List<Cliente> listarClientes() {
+        return clienteDAO.listarTodos();
+    }
+
+    public List<Conta> listarContas() {
+        return contaDAO.listarTodos();
+    }
 }
